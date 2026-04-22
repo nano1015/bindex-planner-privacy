@@ -5,28 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>プライバシーポリシー - Bindex Planner</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-    font-family: 'Noto Sans JP', sans-serif;
-    background: #f8f9fa;
-    color: #1a1a2e;
+    font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    background: #f5f5f7;
+    color: #1d1d1f;
     line-height: 1.9;
     padding: 2rem 1rem;
   }
   .container {
-    max-width: 720px;
+    max-width: 760px;
     margin: 0 auto;
     background: #fff;
-    border-radius: 12px;
+    border-radius: 16px;
     box-shadow: 0 2px 20px rgba(0,0,0,0.06);
     padding: 3rem 2.5rem;
   }
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: #16213e;
+    text-align: center;
   }
   .app-name {
     font-size: 0.95rem;
@@ -34,15 +34,31 @@
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid #e9ecef;
+    text-align: center;
+  }
+  .intro {
+    background: #f0f7ff;
+    border-left: 4px solid #0f3460;
+    padding: 1rem 1.2rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    font-size: 0.93rem;
   }
   h2 {
     font-size: 1.15rem;
     font-weight: 700;
-    margin-top: 2rem;
-    margin-bottom: 0.6rem;
+    margin-top: 2.2rem;
+    margin-bottom: 0.7rem;
     color: #16213e;
     padding-left: 0.8rem;
-    border-left: 3px solid #0f3460;
+    border-left: 3px solid #e94560;
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #16213e;
   }
   p { margin-bottom: 1rem; font-size: 0.95rem; }
   ul {
@@ -50,12 +66,37 @@
     font-size: 0.95rem;
   }
   li { margin-bottom: 0.4rem; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+  th, td {
+    border: 1px solid #e9ecef;
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+  }
+  th {
+    background: #f8f9fa;
+    font-weight: 700;
+    color: #16213e;
+  }
+  .highlight {
+    background: #fff9e6;
+    border-left: 4px solid #f5b800;
+    padding: 0.9rem 1.1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+    font-size: 0.93rem;
+  }
   .date {
     margin-top: 2.5rem;
     padding-top: 1.5rem;
     border-top: 1px solid #e9ecef;
     font-size: 0.9rem;
     color: #6c757d;
+    text-align: right;
   }
   .contact {
     background: #f1f3f5;
@@ -64,75 +105,179 @@
     margin-top: 1rem;
     font-size: 0.93rem;
   }
-  .contact a { color: #0f3460; }
+  .contact a { color: #0f3460; font-weight: 600; }
+  @media (max-width: 600px) {
+    .container { padding: 2rem 1.2rem; }
+    h1 { font-size: 1.4rem; }
+    table { font-size: 0.82rem; }
+    th, td { padding: 0.4rem 0.5rem; }
+  }
 </style>
 </head>
 <body>
 <div class="container">
 
 <h1>プライバシーポリシー</h1>
-<p class="app-name">Bindex Planner（以下「本アプリ」）</p>
+<p class="app-name">Bindex Planner</p>
 
-<h2>1. はじめに</h2>
-<p>本アプリの開発者（以下「当方」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。本プライバシーポリシーは、本アプリにおける情報の取得・利用・管理について説明するものです。</p>
-
-<h2>2. 取得する情報</h2>
-<p>本アプリは、以下の情報を取得する場合があります。</p>
-<ul>
-  <li><strong>カレンダーデータ：</strong>Googleカレンダー連携機能をご利用の場合、Google Calendar APIを通じてユーザーのカレンダー予定（イベントのタイトル、日時、説明）を取得します。</li>
-  <li><strong>アプリ内データ：</strong>TODO、スケジュール、記念日など、ユーザーがアプリ内で作成したデータ。</li>
-</ul>
-<p>本アプリは、ユーザーの氏名、メールアドレス、電話番号、位置情報などの個人を直接特定する情報を収集することはありません。</p>
-
-<h2>3. 情報の利用目的</h2>
-<p>取得した情報は、以下の目的にのみ使用します。</p>
-<ul>
-  <li>アプリ内でのカレンダー予定の表示および管理</li>
-  <li>TODO・スケジュール機能の提供</li>
-  <li>アプリの機能改善およびバグ修正</li>
-</ul>
-
-<h2>4. Googleユーザーデータの取り扱い</h2>
-<p>本アプリは、<a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API サービスのユーザーデータに関するポリシー</a>（Limited Use要件を含む）に準拠しています。</p>
-<ul>
-  <li>Google Calendar APIを通じて取得したデータは、本アプリのカレンダー表示機能の提供にのみ使用します。</li>
-  <li>取得したGoogleユーザーデータを第三者に販売、貸与、提供することはありません。</li>
-  <li>取得したデータを広告目的で使用することはありません。</li>
-  <li>Googleユーザーデータへのアクセスは、アプリの機能提供に必要な最小限の範囲に限定しています。</li>
-</ul>
-
-<h2>5. データの保存と管理</h2>
-<p>本アプリで作成されたデータ（TODO、スケジュール、記念日等）は、ユーザーのデバイス内にローカル保存されます。当方のサーバーにデータを送信・保存することはありません。</p>
-<p>Googleカレンダーのデータは、Google社のサーバーに保存されており、本アプリはAPIを通じて一時的に読み取るのみです。</p>
-
-<h2>6. 第三者への提供</h2>
-<p>当方は、ユーザーの個人情報およびアプリ内データを第三者に提供することはありません。ただし、法令に基づく場合を除きます。</p>
-
-<h2>7. セキュリティ</h2>
-<p>当方は、ユーザーのデータを保護するために、OAuth 2.0による安全な認証方式を採用しています。本アプリがGoogleアカウントのパスワードを取得・保存することはありません。</p>
-
-<h2>8. ユーザーの権利</h2>
-<p>ユーザーは、以下の権利を有します。</p>
-<ul>
-  <li>Googleカレンダー連携をいつでも解除できます。</li>
-  <li><a href="https://myaccount.google.com/permissions" target="_blank">Googleアカウントの権限管理ページ</a>から、本アプリのアクセス権をいつでも取り消すことができます。</li>
-  <li>アプリ内のデータは、アプリの削除により完全に消去されます。</li>
-</ul>
-
-<h2>9. 子どものプライバシー</h2>
-<p>本アプリは、13歳未満の子どもを対象としたものではありません。13歳未満の方からの個人情報を意図的に収集することはありません。</p>
-
-<h2>10. プライバシーポリシーの変更</h2>
-<p>当方は、必要に応じて本プライバシーポリシーを改定することがあります。重要な変更がある場合は、アプリ内またはアプリのダウンロードページにて通知いたします。</p>
-
-<h2>11. お問い合わせ</h2>
-<div class="contact">
-  本プライバシーポリシーに関するお問い合わせは、以下までご連絡ください。<br>
-  メール：<a href="mailto:bindexplanner.support@gmail.com">bindexplanner.support@gmail.com</a>
+<div class="intro">
+本プライバシーポリシーは、Bindex Planner（以下「本アプリ」）における個人情報・ユーザーデータの取り扱いについて定めるものです。本アプリをご利用いただく前に必ずお読みください。
 </div>
 
-<p class="date">制定日：2026年4月11日<br>最終更新日：2026年4月11日</p>
+<h2>1. 取得する情報</h2>
+<p>本アプリでは、提供する機能に応じて以下の情報を取得・保存します。</p>
 
+<h3>1-1. デバイス内に保存される情報（ローカルデータ）</h3>
+<p>以下の情報はユーザーのデバイス内にのみ保存され、ユーザーが共有機能を利用しない限り、外部に送信されることはありません。</p>
+<ul>
+  <li>カレンダーの予定（タイトル、日時、場所、メモ等）</li>
+  <li>TODOタスク（内容、期限、優先度、完了状態）</li>
+  <li>記念日情報</li>
+  <li>パスワード管理機能で保存された認証情報</li>
+  <li>アプリの設定情報（テーマカラー、文字サイズ、言語設定等）</li>
+</ul>
+
+<h3>1-2. クラウドに保存される情報（共有機能利用時）</h3>
+<p>ユーザーがスケジュール共有機能を利用する場合に限り、以下の情報をGoogle社が提供するクラウドサービス「Firebase」に保存します。</p>
+<ul>
+  <li>アカウント情報（メールアドレス、表示名、Apple ID連携情報）</li>
+  <li>共有カレンダーに保存された予定（タイトル、日時、場所、メモ等）</li>
+  <li>共有カレンダーのメンバー情報</li>
+  <li>招待コード・招待履歴</li>
+  <li>プッシュ通知用デバイストークン</li>
+</ul>
+
+<h3>1-3. 自動的に取得される情報</h3>
+<ul>
+  <li>アプリのバージョン情報</li>
+  <li>OS情報（機能提供のため）</li>
+  <li>クラッシュレポート（アプリの改善のため、個人を特定できない形で収集）</li>
+</ul>
+
+<h2>2. 情報の利用目的</h2>
+<p>取得した情報は、以下の目的のために利用されます。</p>
+<ul>
+  <li>本アプリの機能提供（スケジュール管理、TODO管理、記念日管理等）</li>
+  <li>ユーザー認証（Appleサインイン、メール/パスワード認証）</li>
+  <li>共有カレンダー機能の提供（リアルタイム同期、メンバー管理）</li>
+  <li>プッシュ通知の配信（予定のリマインダー、共有カレンダーの更新通知等）</li>
+  <li>不具合の調査・修正、サービスの改善</li>
+</ul>
+
+<h2>3. 第三者サービスの利用</h2>
+<p>本アプリは、共有機能および認証機能の提供にあたり、以下の第三者サービスを利用しています。</p>
+
+<table>
+<thead>
+<tr><th>サービス名</th><th>提供元</th><th>利用目的</th></tr>
+</thead>
+<tbody>
+<tr><td>Firebase Authentication</td><td>Google LLC</td><td>ユーザー認証</td></tr>
+<tr><td>Cloud Firestore</td><td>Google LLC</td><td>スケジュールデータの保存・同期</td></tr>
+<tr><td>Firebase Cloud Messaging</td><td>Google LLC</td><td>プッシュ通知の配信</td></tr>
+<tr><td>Sign in with Apple</td><td>Apple Inc.</td><td>Apple IDによる認証</td></tr>
+</tbody>
+</table>
+
+<p>各サービスのプライバシーポリシーは以下をご参照ください。</p>
+<ul>
+  <li>Google（Firebase）: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+  <li>Apple: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a></li>
+</ul>
+
+<h2>4. 共有機能におけるデータの取り扱い</h2>
+
+<div class="highlight">
+<strong>重要:</strong> ユーザーが共有カレンダーに登録した予定は、そのカレンダーに参加している他のメンバー全員に閲覧されます。機密性の高い情報を共有カレンダーに登録しないよう十分ご注意ください。
+</div>
+
+<h3>4-1. 共有されるデータの範囲</h3>
+<ul>
+  <li>共有カレンダーに登録された予定は、そのカレンダーのメンバー全員が閲覧できます</li>
+  <li>編集権限を持つメンバーは、予定を編集・削除することができます</li>
+  <li>各予定の作成者・最終更新者の表示名はメンバーに表示されます</li>
+</ul>
+
+<h3>4-2. 個人カレンダーとの区別</h3>
+<p>個人カレンダーのデータは他のユーザーには一切共有されません。ユーザーが明示的に共有カレンダーに登録した予定のみがクラウドに保存され、メンバー間で同期されます。</p>
+
+<h2>5. データの保存場所とセキュリティ</h2>
+<ul>
+  <li>ローカルデータはデバイス内の暗号化されたストレージに保存されます</li>
+  <li>パスワード管理機能で保存される情報は、iOS Keychain（端末暗号化ストレージ）に保存されます</li>
+  <li>クラウドデータは、Googleが運営するデータセンター（主にアジアリージョン）に保存されます</li>
+  <li>通信はすべてTLSにより暗号化されます</li>
+  <li>Firebase Security Rulesにより、ユーザーは自身と、自身が参加する共有カレンダーのデータにのみアクセス可能です</li>
+</ul>
+
+<h2>6. データの第三者提供</h2>
+<p>当方は、以下の場合を除き、ユーザーのデータを第三者に提供することはありません。</p>
+<ul>
+  <li>ユーザー本人の同意がある場合</li>
+  <li>法令に基づく開示請求があった場合</li>
+  <li>人の生命、身体、財産の保護のために必要な場合で、本人の同意を得ることが困難な場合</li>
+  <li>本アプリの機能提供に必要な範囲で、上記「3. 第三者サービスの利用」に記載のサービス提供者に委託する場合</li>
+</ul>
+<p>ユーザーデータを広告配信や分析目的で第三者に販売・提供することは一切ありません。</p>
+
+<h2>7. データの保存期間</h2>
+<ul>
+  <li>ローカルデータ: アプリを削除するまで、またはユーザーが削除操作を行うまで保存されます</li>
+  <li>クラウドデータ: アカウントが有効な期間中、保存されます</li>
+  <li>アカウント削除時: 関連する全てのクラウドデータが30日以内に完全削除されます</li>
+  <li>招待コード: 生成から24時間で自動的に無効化されます</li>
+</ul>
+
+<h2>8. ユーザーの権利</h2>
+<p>ユーザーは、本アプリにおいて以下の操作を行うことができます。</p>
+<ul>
+  <li><strong>データの閲覧:</strong> アプリ内でいつでも自身のデータを閲覧できます</li>
+  <li><strong>データの修正:</strong> アプリ内でいつでも自身のデータを編集できます</li>
+  <li><strong>データのエクスポート:</strong> 設定画面の「データ管理」からJSON形式でエクスポートできます</li>
+  <li><strong>データの削除:</strong> 個別の削除に加え、設定画面から全データの一括削除が可能です</li>
+  <li><strong>アカウントの削除:</strong> 設定画面の「アカウント削除」から、アカウントおよびクラウド上の全データを削除できます</li>
+  <li><strong>共有カレンダーからの退出:</strong> いつでも参加している共有カレンダーから退出できます</li>
+</ul>
+
+<h2>9. アカウント削除について</h2>
+<p>アカウントを削除する場合、以下のデータが削除されます。</p>
+<ul>
+  <li>アカウント情報（メールアドレス、表示名等）</li>
+  <li>ユーザーが作成した共有カレンダー（所属する全メンバーからも見えなくなります）</li>
+  <li>参加していた共有カレンダーからのメンバー情報</li>
+  <li>プッシュ通知用デバイストークン</li>
+</ul>
+<div class="highlight">
+<strong>注意:</strong> アカウント削除時、ユーザーがオーナーの共有カレンダーは完全に削除されます。他のメンバーが使い続けられるようにするには、事前にオーナー権限を他のメンバーに譲渡してください。
+</div>
+
+<h2>10. お子様のプライバシー</h2>
+<p>本アプリは13歳未満（日本国内では13歳未満、EUでは16歳未満）のお子様を対象としていません。13歳未満のお子様から意図せず情報を取得したことが判明した場合、速やかに削除いたします。</p>
+
+<h2>11. 国際的なデータ転送</h2>
+<p>本アプリの利用により、ユーザーのデータがユーザーの居住国以外の国（主に米国・アジア圏のGoogle Cloudデータセンター）に転送される場合があります。Googleは適切な安全管理措置のもとでデータを保護しています。</p>
+
+<h2>12. Cookie および類似技術</h2>
+<p>本アプリはウェブサイトではないため、Cookieは使用していません。ただし、認証状態の維持のために、デバイス内に認証トークンを保存します。</p>
+
+<h2>13. プライバシーポリシーの変更</h2>
+<p>当方は、本プライバシーポリシーを随時改定することがあります。重要な変更がある場合は、アプリ内通知またはメールでお知らせします。最新のプライバシーポリシーは常に本ページに掲載されます。</p>
+
+<h2>14. お問い合わせ</h2>
+<p>本プライバシーポリシーに関するご質問、データの開示・訂正・削除のご請求等は、以下までご連絡ください。</p>
+<div class="contact">
+Email: <a href="mailto:k.naokun0329@gmail.com">k.naokun0329@gmail.com</a><br>
+サポートページ: <a href="https://nano1015.github.io/bindex-planner-privacy/support.html">https://nano1015.github.io/bindex-planner-privacy/support.html</a>
+</div>
+
+<p class="date">
+制定日: 2026年4月10日<br>
+最終更新日: 2026年4月23日（v1.5 スケジュール共有機能追加に伴い改定）
+</p>
+
+</div>
+</body>
+</html>
 </div>
 </body>
 </html>
